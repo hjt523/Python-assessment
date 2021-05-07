@@ -238,7 +238,16 @@ def seven(inputString, char):
 	# help(int) for working with numbers and help(str) for working with Strings.
 
 def eight(arg1):
-	return 0
+	numbers = arg1.split()
+	biggest = 0
+	for i in range(0, len(numbers)):
+		current= numbers[i]
+		added = 0
+		for j in range(0, len(current)):
+			added = added + int(current[j])
+		if ( added > biggest):
+			biggest = added
+	return biggest
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
