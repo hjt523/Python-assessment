@@ -121,7 +121,18 @@ def three(input):
 
 
 def four(input):
-    return False
+	string =input.lower()
+	if "ei" in string :
+		location = string.find("ei")
+		if (string[location -1 ] == "c"):
+			return True
+		return False
+	if "ie" in string :
+		location = string.find("ie")
+		if (string[location -1 ]== "c"):
+			return False
+		return True
+	
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
