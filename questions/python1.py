@@ -208,7 +208,10 @@ def six(string, int_, char):
 	# Take a look at the documentation for Strings, List and range.
 
 def seven(inputString, char):
-	return -1
+	string = inputString.replace(" ","")
+	if(string.find(char) == -1 ):
+		return -1
+	return string.find(char) +1
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
