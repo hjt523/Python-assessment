@@ -91,7 +91,14 @@ def two(arg1):
 	# How do we ignore case in a String? help(str) may offer some insight.
 
 def three(input):
-    return 0
+	word =input.lower()
+	count = 0
+	count = count + word.count('a')
+	count = count + word.count('e')
+	count = count + word.count('i')
+	count = count + word.count('o')
+	count = count + word.count('u')
+	return count
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
