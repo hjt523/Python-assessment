@@ -65,6 +65,13 @@ def one(input1, input2):
 	# No hints for this question
 
 def two(arg1):
+	input = float(arg1)
+	if( input / 3.0 == int(input /3.0) ):
+		if( input / 5.0 == int(input/5.0) ):
+			return "fizzbuzz"
+		return "fizz"
+	if( input / 5.0 == int(input/5.0) ):
+		return "buzz"
 	return "null"
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
