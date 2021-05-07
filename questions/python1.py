@@ -313,7 +313,13 @@ def nine(input):
 	# help(str) and help(list), you might also need to use a function that can create a list of numbers for you, try help(range).
 
 def ten(input):
-	return []
+	Strings = input.split(",")
+	names=[]
+	for i in range(0, len(Strings), 4):
+		if Strings[i+2] == "False" :
+			names.append(str(Strings[i]))
+	names = list(set(names))
+	return names
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
