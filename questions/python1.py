@@ -274,6 +274,15 @@ def eight(arg1):
 	# Use your CLI to access the Python documentation and get help manipulating strings - help(str).
 
 def nine(input):
+	string=input.lower()
+	if string.find("bert") != -1:
+		first = string.find("bert")
+		if string.find ("bert", first + 3, len(string)) == -1:
+			return ""
+		else:
+			second = string.find ("bert", first + 3, len(string))
+			return ( string[first + 4:second])
+		
 	return ""
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
